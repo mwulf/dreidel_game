@@ -1,0 +1,54 @@
+each player starts with equal # of pieces (between 10 and 15)
+round:
+    at beginning, each player puts one piece into pot.
+    if pot is empty (alt: has one piece), each player puts one piece into pot.
+    each player spins dreidel once during turn.
+        nun = do nothing
+        gimel = get everything in pot
+        hey = player gets ceil(n/2) where n is pieces in pot
+        shin = player puts 1 piece in (alt: 3 pieces)
+        if player is out of pieces, is out.
+    round is over when one player has all the pieces.
+    
+Candidate objects:
+    dreidel
+    player
+    pot
+    account?
+    game? (acts as controller)
+    
+Player:
+    has Account.
+    spin(): returns random int between 1 and 4, or actual letter name
+    
+Game:
+    has Players.
+    has Pot (this is really just an account)
+    has actions:
+        action['nun'] = self.do_nothing
+        action['gimel'] = self.get_all
+        action['hey'] = self.get_half
+        action['shin'] = self.put_in
+    setup(): give each player equal # of pieces in their account.
+    while no one has all the pieces,
+        round-robin the players:
+            do_turn(player):
+                action[player.spin()](player)
+                
+Account:
+    has balance.  <-- this should be a property
+    deposit(n): add n to balance.
+    withdraw(n): if balance >= n, subtract n from balance and return n.
+                 otherwise, set balance to 0 and return n - original balance.
+    is_empty(): return balance == 0
+    tests:
+        add n to balance, confirm that it increases as expected
+        withdraw n where n < balance
+        " = " 
+        " > "
+        set balance > 0, assert ! is_empty
+        set balance to 0, assert is_empty
+    
+Tasks:
+    write Account, test it.  Done.
+    
