@@ -43,60 +43,60 @@ Pot: 0
 A: 3
 B: 3
 C: 3
-
+--------------------
 Everyone antes up.
 Pot: 3
 A: 2
 B: 2
 C: 2
-
+--------------------
 Turn #1: A spins 'shin' and puts in 1.
 Pot: 4
 A: 1
 B: 2
 C: 2
-
+--------------------
 Turn #2: B spins 'gimel' and gets everything.
 Pot: 0
 A: 1
 B: 6
 C: 2
-
+--------------------
 Everyone antes up.
 A is out of the game.
 Pot: 3
 B: 5
 C: 1
-
+--------------------
 Turn #3: C spins 'nun' and does nothing.
 Pot: 3
 B: 5
 C: 1
-
+--------------------
 Turn #4: B spins 'hey' and gets half.
 Pot: 1
 B: 7
 C: 1
-
+--------------------
 Everyone antes up.
 C is out of the game.
 Pot: 3
 B: 6
-
+--------------------
 Turn #5: B spins 'shin' and puts in 1.
 Pot: 4
 B: 5
-
+--------------------
 Turn #6: B spins 'hey' and gets half.
 Pot: 2
 B: 7
-
+--------------------
 Turn #7: B spins 'hey' and gets half.
 Pot: 1
 B: 8
-
+--------------------
 Turn #8: B spins 'gimel' and gets everything.
 Pot: 0
 B: 9
-
+--------------------
 B wins!
